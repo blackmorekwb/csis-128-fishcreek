@@ -1,5 +1,5 @@
 h1{
-	line-height: 200%; 
+	text-align: center;
 	color: #003366;
 }
 header {
@@ -8,9 +8,12 @@ header {
 }
 nav {
 	font-weight: bold;
+	text-align: center;
 }
 nav a {
 	padding-right: 0.25em;
+	text-decoration: none;
+	/* ^^^ fixed underscores after image links: https://stackoverflow.com/questions/9003969/underscore-between-two-image-links */
 }
 
 body {
@@ -19,7 +22,8 @@ body {
 	font-family: Verdana, Arial, sans-serif;
 }
 #wrapper { /* inside wrapper for the body content */
-	width: 80%;
+	min-width: 700px;
+	max-width: 1024px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -28,8 +32,15 @@ body {
 	background-color: #6699ff;
 	color: #003366;
 	font-size: 1.1em;
+	text-shadow: 1px 1px 1px #667;
+}
+img {
+	border: none;
 }
 footer {
 	font-size: 0.7em;
 	font-style: italic;
+}
+footer nav {
+	text-align: left;
 }
