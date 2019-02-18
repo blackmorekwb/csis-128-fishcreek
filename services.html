@@ -8,49 +8,47 @@
 
 <body>
 	<div id= "wrapper">
-	<h1> <img src="assets/fishcreeklogo.gif"
-		width="600" height="77"
-		alt="Fish Creek Animal Hospital Logo">
-	</h1>
+	<header> 
+		<h1> <img src="assets/fishcreeklogo.gif"
+			width="600" height="77"
+			alt="Fish Creek Animal Hospital Logo">
+		</h1>
+	</header>
 	<nav>
-		<a href="index.html">
-			<img src="assets/home.gif"
-			width="132" height="27" alt="Fish Creek Animal Hospital Home Page">
-		</a>
-		<a href="services.html">
-			<img src="assets/services.gif"
-			width="132" height="27" alt="Fish Creek Animal Hospital Services Page">
-		</a>
-		<a href="ask.html">
-			<img src="assets/askthevet.gif"
-			width="132" height="27" alt="Fish Creek Animal Hospital Ask Page">
-		</a>
-		<a href="contact.html">
-			<img src="assets/contact.gif"
-			width="132" height="27" alt="Fish Creek Animal Hospital Contact Page">
-		</a>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="ask.html">Ask the Vet</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
 	</nav>
 
-	<ul>
-		<li><strong><span class="category">Medical Services</span></strong><br>
-			We offer state-of-the-art equipment and technology.
-		</li>
-		<li><strong><span class="category">Surgical Services</span></strong><br>
-			Full range of surgical procedures including orthopedics and emergency surgeries.
-		</li>
-		<li><strong><span class="category">Dental Care</span></strong><br>
-			A dental exam can determine whether your pet needs preventive dental care such <br>
-			as scaling and polishing.
-		</li>
-		<li><strong><span class="category">House Calls</span></strong><br>
-			The elderly, physically challenged, and multiple pet households often find our <br> 
-			in-home veterinary service helpful and convenient.
-		</li>
-		<li><strong><span class="category">Emergencies</span></strong><br>
-			At least one of our doctors is on call every day and night.
-		</li>
-	</ul>
-	
+	<main>
+		<table>
+			<tr>
+				<th class="category">Medical Services</th>
+				<td>We offer state-of-the-art equipment and technology.</td>
+			</tr>
+			<tr>
+				<th class="category">Surgical Services</th>
+				<td>Full range of surgical procedures including orthopedics and emergency surgeries.</td>
+			</tr>	
+			<tr>	
+				<th class="category">Dental Care</th>
+				<td>A dental exam can determine whether your pet needs preventive dental care such 
+					as scaling and polishing.</td>
+			</tr>
+			<tr>
+				<th class="category">House Calls</th>
+				<td>The elderly, physically challenged, and multiple pet households often find our 
+					in-home veterinary service helpful and convenient.</td>
+			</tr>
+			<tr>
+				<th class="category">Emergencies</th>
+				<td>At least one of our doctors is on call every day and night.</td>
+			</tr>
+		</table>
+	</main>
 	<!-- things like this footer, and the above nav bar, etc, i would put in their own small html files as "partials" 
 		 as to not reuse code / one change to alter all uses  -->
 	<footer>
