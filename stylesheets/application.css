@@ -21,6 +21,7 @@ nav {
 	/* text-align: center; */
 	float: left;
 	width: 150px;
+	min-height: 300px;
 }
 nav a {
 	padding-right: 0.25em;
@@ -79,7 +80,20 @@ td, th {
 	border: 1px solid #00008B;
 }
 
-
+label {
+	display: block;
+	float: left;
+	text-align: right;
+	width: 8em;
+	padding-right: 1em;
+}
+input, textarea {
+	display: block;
+	margin-bottom: 1em;
+}
+#mysubmit {
+	margin-left: 21em;
+}
 img {
 	border: none;
 }
