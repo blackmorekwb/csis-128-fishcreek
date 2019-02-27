@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Fish Creek Animal Shop</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="stylesheets/application.css">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+		</script>
+	<![endif]-->
+</head>
+
+<body>
+	<div id= "wrapper">
+	<header>
+		<h1> <img src="assets/fishcreeklogo.gif"
+			width="600" height="77"
+			alt="Fish Creek Animal Hospital Logo">
+		</h1>
+	</header>
+  <main class="grid">
+	<nav class="navi">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="ask.html">Ask the Vet</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a href="shop.html">Shop</a></li>
+		</ul>
+	</nav>
+
+
+    <h2 class="hg">Shop at Fish Creek</h2>
+
+    <div class="shop">
+      <img src="assets/fishtote.gif" alt="Fish Creek Animal Hospital Tote"
+           width="150" height="150">
+      <p>Carry your pet supplies and accessories in a special tote
+         from Fish Creek. 100% cotton. $14.95
+      </p>
+      <form method="post"
+            action="http://www.webdevfoundations.net/scripts/cart/asp">
+            <input type="hidden"
+                   name="desc1"
+                   id="desc1"
+                   value="FishCreek Tote">
+            <input type="hidden"
+                   name="cost1"
+                   id="cost1"
+                   value="14.95">
+            <input type="submit" value="Add to Cart">
+      </form>
+    </div>
+
+    <div class="shop2" class="right">
+      <img src="assets/fishsweat.gif" alt="Fish Creek Animal Hospital Sweater"
+           width="150" height="150">
+      <p>A Fish Creek sweatshirt will warm you up on cool morning
+        walks with your pet. 100% cotton. Size XL. $29.95
+      </p>
+      <form method="post"
+            action="http://www.webdevfoundations.net/scripts/cart/asp">
+            <input type="hidden"
+                   name="desc2"
+                   id="desc2"
+                   value="FishCreek Shirt">
+            <input type="hidden"
+                   name="cost2"
+                   id="cost2"
+                   value="29.95">
+            <input type="submit" value="Add to Cart">
+    </div>
+
+  </main>
+
+	<!-- things like this footer, and the above nav bar, etc, i would put in their own small html files as "partials"
+	 as to not reuse code / one change to alter all uses  -->
+
+	 <!-- Since we italicize in the css, i took out the <i> tags -->
+	<footer>
+		Copyright &copy; 2014 Fish Creek Animal Hospital <br>
+		Kyle Blackmore<br>
+		<a href= "mailto:S1368557@student.mcckc.edu ">S1368557@student.mcckc.edu </a>
+		<div>
+			<br>
+			<script>document.write("This page was last modified on: " +
+					document.lastModified);
+			</script>
+
+		</div>
+	</footer>
+	</div> <!-- wrapper -->
+</body>
+</html>

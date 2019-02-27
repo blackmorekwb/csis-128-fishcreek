@@ -56,7 +56,7 @@ body {
 	color: #000066;
 }
 main {
-	margin-right: 180px;
+	margin-right: 20px;
 	padding-right: 20px;
 	padding-bottom: 20px;
 
@@ -99,7 +99,34 @@ video {
 	margin-left: 20px;
 	margin-right: 20px;
 }
+/* Chapter 12 */
+.grid {
+	display: grid;
+	grid-template-columns: 150px 40% 40%;
+	grid-template-areas:
+		"navi hg hg"
+		"navi shop shop2";
 
+}
+.shop {
+
+
+	padding: 1em;
+	grid-area: shop;
+
+}
+.shop2 {
+	grid-area: shop2;
+
+}
+.navi {
+
+	grid-area: navi;
+}
+.hg {
+
+	grid-area: hg;
+}
 #mysubmit {
 	margin-left: 21em;
 }
@@ -113,6 +140,7 @@ footer {
 	padding: 10px;
 	margin-left: 180px;
 	padding-top: 65px;
+	clear: all;
 }
 footer nav {
 	text-align: left;
