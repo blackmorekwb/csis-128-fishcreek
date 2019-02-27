@@ -59,7 +59,8 @@ main {
 	margin-right: 180px;
 	padding-right: 20px;
 	padding-bottom: 20px;
-	
+
+
 }
 .category {
 	font-weight: bold;
@@ -91,6 +92,14 @@ input, textarea {
 	display: block;
 	margin-bottom: 1em;
 }
+
+/*	Chapter 11 */
+video {
+	float: right;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
 #mysubmit {
 	margin-left: 21em;
 }

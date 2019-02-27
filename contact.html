@@ -2,18 +2,28 @@
 <html lang="en">
 <head>
 	<title>Fish Creek Contact</title>
-	<meta charset="utf-8"> 
-	<link rel="stylesheet" type="text/css" href="stylesheets/application.css"> 
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="stylesheets/application.css">
+	<script>
+		function validateForm() {
+			if (document.forms[0].myEmail.value=="") {
+				alert("Please enter an e-mail address");
+				return false;
+			}
+
+		}
+	</script>
 </head>
 
 <body>
 	<div id= "wrapper">
-	<header> 
+	<header>
 		<h1> <img src="assets/fishcreeklogo.gif"
 			width="600" height="77"
 			alt="Fish Creek Animal Hospital Logo">
 		</h1>
 	</header>
+
 	<nav>
 		<ul>
 			<li><a href="index.html">Home</a></li>
@@ -25,26 +35,32 @@
 
 	<main>
 		<h2>Contact Fish Creek</h2>
-		
-		<p>Required fields are marked with an asterisk (*)</p>
-		
-		<form action="post" method="http://webdevbasics.net/scripts/fishcreek.php">
-			<label for="myname">* Name:</label>
-			<input type="text" name="myname" id="myname" required>
-			
-			<label for="myemail">* Email:</label>
-			<input type="email" name="myemail" id="myemail" required>
-			
-			<label for="mycomments">* Comments:</label>
-			<textarea type="text" name="mycomments" id="mycomments"
-					  rows="2" cols="20" required></textarea>
-					  
+
+		<form method="post"
+			  action="http://webdevbasics.net/scripts/fishcreek.php"
+			  onsubmit="return validateForm";>
+			<label for="myname">Name:</label>
+			<input type="text" 
+				   name="myname"
+				   id="myname">
+
+			<label for="myEmail">Email:</label>
+			<input type="email"
+				   name="myEmail"
+				   id="myEmail">
+
+			<label for="mycomments">Comments:</label>
+			<textarea type="text"
+					  name="mycomments"
+					  id="mycomments"
+					  rows="2" cols="20"></textarea>
+
 			<input type="submit" name="mysubmit" id="mysubmit" value="Send Now">
-		</form> 
-	
-	</main> 
-	
-	<!-- things like this footer, and the above nav bar, etc, i would put in their own small html files as "partials" 
+		</form>
+
+	</main>
+
+	<!-- things like this footer, and the above nav bar, etc, i would put in their own small html files as "partials"
 		 as to not reuse code / one change to alter all uses  -->
 	<footer>
 		<a href="index.html">Home</a>
